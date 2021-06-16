@@ -1,0 +1,11 @@
+{% if shortcode %}
+  <section is="flynt-block-shortcode" class="flyntComponent componentSpacing">
+    <div class="flyntComponent__inner">
+
+        <div class="shortcode__wrapper">
+          {{ function('do_shortcode', shortcode) }}
+        </div>
+
+    </div>
+  </section>
+{% endif %}
